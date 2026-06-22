@@ -3,13 +3,13 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "jcli"
+name = "jsoncli"
 version = "0.1.0"
 description = "Turn any JSON file into a beautiful, collapsible, bracket-free tree in your terminal."
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
-authors = [{ name = "jcli" }]
+authors = [{ name = "jsoncli" }]
 keywords = ["json", "cli", "tui", "viewer", "tree", "textual"]
 dependencies = [
     "textual>=0.60",
@@ -23,10 +23,10 @@ test = [
 ]
 
 [project.scripts]
-jcli = "jcli.cli:main"
+jsoncli = "jsoncli.cli:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["jcli"]
+packages = ["jsoncli"]
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
